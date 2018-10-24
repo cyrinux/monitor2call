@@ -6,8 +6,6 @@ RUN apk add git && apk add ca-certificates && apk add make && apk add gcc && apk
 RUN adduser -D -g '' monitor2call
 COPY . $GOPATH/src/monitor2call/
 WORKDIR $GOPATH/src/monitor2call/worker/
-# Get dependancies
-RUN make deps
 # Build the worker binary
 RUN make release
 # Move worker file

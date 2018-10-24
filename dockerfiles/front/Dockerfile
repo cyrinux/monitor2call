@@ -11,8 +11,6 @@ WORKDIR $GOPATH/src/monitor2call/front/
 # Create swagger doc
 RUN make clean
 RUN make swag
-# Get dependancies
-RUN make deps
 # Build the front binary
 RUN make release
 # Move front files
