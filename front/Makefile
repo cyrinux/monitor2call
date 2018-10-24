@@ -17,12 +17,6 @@ gobuild: *.go **/*.go
 	install -d -m0700 ./cache
 	go build -o front
 
-docker-deps:
-	dep ensure --vendor-only
-
-release: *.go **/*.go
-	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -ldflags="-w -s" -o front
-
 test:
 	go test ./...
 

@@ -30,13 +30,13 @@ type Translation struct {
 
 // Alert define alert content
 type Alert struct {
-	ID                   string                           `json:"_id,omitempty" binding:"-"`
-	Rev                  string                           `json:"_rev,omitempty" binding:"-"`
-	Host                 string                           `json:"host" binding:"required" example:"dbprep01"`
-	Service              string                           `json:"service" binding:"required" example:"postgres"`
-	Monitor              string                           `json:"monitor" binding:"required" example:"nagios"`
-	Message              string                           `json:"message" binding:"-" example:"postgres on dbprep01 is down"`
-	State                string                           `json:"state" binding:"required" example:"down"`
+	ID                   string                           `json:"_id,omitempty" form:"id" binding:"-"`
+	Rev                  string                           `json:"_rev,omitempty" form:"rev" binding:"-"`
+	Host                 string                           `json:"host" form:"host" binding:"-" example:"dbprep01"`
+	Service              string                           `json:"service" form:"service" binding:"-" example:"postgres"`
+	Monitor              string                           `json:"monitor" form:"monitor" binding:"required" example:"nagios"`
+	Message              string                           `json:"message" form:"message" binding:"-" example:"postgres on dbprep01 is down"`
+	State                string                           `json:"state" form:"state" binding:"-" example:"down"`
 	Filename             string                           `json:"filename" binding:"-" example:"./cache/nagios-postgres-dbprep01-down-fr.mp3"`
 	Tags                 []string                         `json:"tags" binding:"-"`
 	Acknowledgements     map[string]*AlertAcknowledgement `json:"acknowledgements,omitempty" binding:"-"`
@@ -53,17 +53,20 @@ type Alert struct {
 
 // Validate the Alert input input
 func (alert *Alert) Validate() string {
-	if alert.Host == "" {
-		return "Field 'host' cannot be empty"
+	if alert.Message == "" {
+		if alert.Host == "" {
+			return "Field 'host' cannot be empty"
+		}
+		if alert.Service == "" {
+			return "Field 'service' cannot be empty"
+		}
+		if alert.State == "" {
+			return "Field 'state' cannot be empty"
+		}
 	}
-	if alert.Service == "" {
-		return "Field 'service' cannot be empty"
-	}
+
 	if alert.Monitor == "" {
 		return "Field 'monitor' cannot be empty"
-	}
-	if alert.State == "" {
-		return "Field 'state' cannot be empty"
 	}
 
 	return ""
@@ -76,7 +79,7 @@ func (alert *Alert) Prepare() *pushover.Message {
 
 	// if Message is not set, generate on
 	if alert.Message == "" {
-		alert.Message = alert.Monitor + " alert. " + alert.Service + " on " + alert.Host + " is " + alert.State
+		alert.Message = "Monitor: " + alert.Monitor + ". Alert " + alert.Service + " on " + alert.Host + " is " + alert.State + "."
 	}
 
 	// voice filename prefix

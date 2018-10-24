@@ -11,7 +11,6 @@ import (
 	"github.com/cyrinux/monitor2call/models"        //structs
 	"github.com/cyrinux/monitor2call/notifications" //notifications
 	"github.com/cyrinux/monitor2call/translate"     //translate
-
 	"github.com/gin-gonic/gin"
 )
 
@@ -19,6 +18,7 @@ import (
 // @Summary Create an alert
 // @Description create an alert
 // @Accept application/json
+// @Accept multipart/form-data
 // @Accept json
 // @Param host query string true "host"
 // @Param service query string true "service"
@@ -43,7 +43,12 @@ func PostAlert(c *gin.Context) {
 	// 	return
 	// }
 
-	c.BindJSON(&alert)
+	// try form bind
+	errBind := c.Bind(&alert)
+	if errBind != nil {
+		// or bind Json
+		c.BindJSON(&alert)
+	}
 
 	if err := alert.Validate(); err != "" {
 		c.JSON(http.StatusUnprocessableEntity, gin.H{"error": err})
