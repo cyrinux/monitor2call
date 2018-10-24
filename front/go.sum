@@ -10,9 +10,10 @@ github.com/aerokite/go-google-translate v0.0.2-alpha h1:afXUGZSsF3+TRsqLKv8gOylv
 github.com/aerokite/go-google-translate v0.0.2-alpha/go.mod h1:h0eb2VzZMJy/WjLtAZw4CNUBu73rGF0/rWPXb7HIN1c=
 github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973/go.mod h1:Dwedo/Wpr24TaqPxmxbtue+5NUziq4I4S80YR8gNf3Q=
 github.com/client9/misspell v0.3.4/go.mod h1:qj6jICC3Q7zFZvVWo7KLAzC3yx5G7kyvSDkc90ppPyw=
-github.com/cyrinux/monitor2call/api v0.0.0-20181024071537-c6ab0a2ab700/go.mod h1:Ie6NRP7VMhkpU3kDQEqa/wDJjaq3QmAT960vh0SPgvc=
-github.com/cyrinux/monitor2call/api v0.0.0-20181024085818-5c137c539eda h1:ZpcTgrBeLGBwjedxaBeFDVWdp2TTGu733ztxs40dP00=
-github.com/cyrinux/monitor2call/api v0.0.0-20181024085818-5c137c539eda/go.mod h1:8ysD5BRhRz2Q7rdl/V5rLh6jrEgWwyODtDUATeGvx0s=
+github.com/cyrinux/monitor2call/api v0.0.0-20181024065403-535d62464bd8/go.mod h1:HEYwcdsUGqINaxQWGPs3Q7lIiml0UCMIt7EbzE02I+U=
+github.com/cyrinux/monitor2call/api v0.0.0-20181024081943-44f9e41ff2b9/go.mod h1:ehpeHYu5zov3zn2wFx9nLVI31CH5wz+2sWVM48wXjM0=
+github.com/cyrinux/monitor2call/api v0.0.0-20181024090540-9e0da6c769c4 h1:H3JoK6grlsH52Q2Renym8Sch4ESK+ZE6acWDJJQwJl8=
+github.com/cyrinux/monitor2call/api v0.0.0-20181024090540-9e0da6c769c4/go.mod h1:Z6dmmR/mjlu8LiT9QPhU0VtVvNxLgVrehwOPxhl8ylc=
 github.com/cyrinux/monitor2call/database v0.0.0-20181024065403-535d62464bd8/go.mod h1:C6RNEdL4dvARzuChnvu0llZsTO2ln0ZcDsvdeXCKwf0=
 github.com/cyrinux/monitor2call/database v0.0.0-20181024071537-c6ab0a2ab700 h1:oEpmX4ijPTkHt0nx/oAdDa4opGgSMJJyX7MFGRsOsts=
 github.com/cyrinux/monitor2call/database v0.0.0-20181024071537-c6ab0a2ab700/go.mod h1:YsbHvcvCWHAHILmS10Hn5X4u1kubQCKij27sPhdJ6IU=
@@ -20,8 +21,10 @@ github.com/cyrinux/monitor2call/database v0.0.0-20181024081943-44f9e41ff2b9 h1:R
 github.com/cyrinux/monitor2call/database v0.0.0-20181024081943-44f9e41ff2b9/go.mod h1:3BPv1oBQp4Y/7EXth/+s+GWv48pY5GZz2ecVGRo+tgA=
 github.com/cyrinux/monitor2call/database v0.0.0-20181024085818-5c137c539eda h1:TxpDtG9EmgB0BO9Ulz6KI7IiEnS6q2u3oDIXVVmcEzk=
 github.com/cyrinux/monitor2call/database v0.0.0-20181024085818-5c137c539eda/go.mod h1:dCZriYvUYlrRbCW4Ow6zto/ZbZNaf80HzmJzk1uZPRw=
-github.com/cyrinux/monitor2call/front v0.0.0-20181024065403-535d62464bd8/go.mod h1:ZozBFRu/trzd0MvAH5MC2m5AT6B4JXNjboy1nig8b7s=
-github.com/cyrinux/monitor2call/front v0.0.0-20181024081943-44f9e41ff2b9/go.mod h1:h/8haDFwBjPLg0Ki5CbRmavA7W4KW/RCA/03V3qBlFk=
+github.com/cyrinux/monitor2call/database v0.0.0-20181024090540-9e0da6c769c4 h1:zxmZlM9BRYkeEjAeeabdM8v0L5hwJByGVQFPUh2Mesk=
+github.com/cyrinux/monitor2call/database v0.0.0-20181024090540-9e0da6c769c4/go.mod h1:dCZriYvUYlrRbCW4Ow6zto/ZbZNaf80HzmJzk1uZPRw=
+github.com/cyrinux/monitor2call/front v0.0.0-20181024071537-c6ab0a2ab700/go.mod h1:NqON85bWU2Vq1tC7Cdn5SrWaoTs+nx/NL1LgxkzOhwY=
+github.com/cyrinux/monitor2call/front v0.0.0-20181024085818-5c137c539eda/go.mod h1:GNpEAQjnP8pxGq4bjUFPSl4H9+hYO/HmCfPb4amWVHk=
 github.com/cyrinux/monitor2call/helpers v0.0.0-20181024063020-d96f7ac932b5/go.mod h1:j46ewHfwka4rUMi/9nV+Ro6BBxI4siPkzaoMoPW8J1g=
 github.com/cyrinux/monitor2call/helpers v0.0.0-20181024065403-535d62464bd8/go.mod h1:j46ewHfwka4rUMi/9nV+Ro6BBxI4siPkzaoMoPW8J1g=
 github.com/cyrinux/monitor2call/helpers v0.0.0-20181024071537-c6ab0a2ab700 h1:FFzdPeN57Ngu6FwqUn8YZ68r/NBx+ur6QdVryPmJmLQ=
@@ -37,6 +40,8 @@ github.com/cyrinux/monitor2call/models v0.0.0-20181024081943-44f9e41ff2b9 h1:SON
 github.com/cyrinux/monitor2call/models v0.0.0-20181024081943-44f9e41ff2b9/go.mod h1:w2R9OL9ngkl3rHwQMGCuWLiINXhngrlL/5h5AwEfC/E=
 github.com/cyrinux/monitor2call/models v0.0.0-20181024085818-5c137c539eda h1:fRmnio3gmfMJyj1ZgTL2dSe5nuRaZxaXE99A68+G1UM=
 github.com/cyrinux/monitor2call/models v0.0.0-20181024085818-5c137c539eda/go.mod h1:15K7SyLbpMQY0RxSMS5/0GKnDNESsYc2DNCyUSbTarE=
+github.com/cyrinux/monitor2call/models v0.0.0-20181024090540-9e0da6c769c4 h1:fvaChbBqYhJjPlRkw86CefK7NxW9oO/UTeOoUXg+N8Y=
+github.com/cyrinux/monitor2call/models v0.0.0-20181024090540-9e0da6c769c4/go.mod h1:15K7SyLbpMQY0RxSMS5/0GKnDNESsYc2DNCyUSbTarE=
 github.com/cyrinux/monitor2call/notifications v0.0.0-20181024065403-535d62464bd8 h1:eThe+oCPUGSdz9JPmSSvQuHN0Uw1wplBa/QKSr6N5QY=
 github.com/cyrinux/monitor2call/notifications v0.0.0-20181024065403-535d62464bd8/go.mod h1:DL0d8jSJWiAp5j9iKmoJfnkUD2G0gsyKs8kVKcerGc4=
 github.com/cyrinux/monitor2call/notifications v0.0.0-20181024071537-c6ab0a2ab700 h1:mmGZR7kyoX6b40HmhRRB+tIZanOoVN/OW1ZJYP7g0zI=
@@ -45,6 +50,8 @@ github.com/cyrinux/monitor2call/notifications v0.0.0-20181024081943-44f9e41ff2b9
 github.com/cyrinux/monitor2call/notifications v0.0.0-20181024081943-44f9e41ff2b9/go.mod h1:aZP6/hUVPFdB3QHoJ3+TmCtD4vQs7M5LG/+nBDVTU0s=
 github.com/cyrinux/monitor2call/notifications v0.0.0-20181024085818-5c137c539eda h1:D+9wIg0HDG2J+aMFz8szPvcxvRx50viXOYDEC5I6SLQ=
 github.com/cyrinux/monitor2call/notifications v0.0.0-20181024085818-5c137c539eda/go.mod h1:zNFH1GZDakS911rUqafRhO9KZ/EwYqXeyFTVduhjh5Q=
+github.com/cyrinux/monitor2call/notifications v0.0.0-20181024090540-9e0da6c769c4 h1:S2ihWxtP8bEt17AoSWNm+AS8xklucYh6H/xovKVZy3k=
+github.com/cyrinux/monitor2call/notifications v0.0.0-20181024090540-9e0da6c769c4/go.mod h1:Ws1D4pbGc1AgMCizqqUbXHiGEzGYb2M4gOI6o8RYHPM=
 github.com/cyrinux/monitor2call/translate v0.0.0-20181024065403-535d62464bd8 h1:4E1NWiNykMpuTbws+YokGjS5ttVATHTW02S2NBOnMFw=
 github.com/cyrinux/monitor2call/translate v0.0.0-20181024065403-535d62464bd8/go.mod h1:3AgRxAIg96VxEdA5GUmI1hKcv724yDS0y/9JwwYQcRE=
 github.com/cyrinux/monitor2call/translate v0.0.0-20181024071537-c6ab0a2ab700 h1:6k4U7hq/WwtlOtIIKTNvgxljKpAX7eK2S1R2P0N8xXE=
@@ -53,6 +60,8 @@ github.com/cyrinux/monitor2call/translate v0.0.0-20181024081943-44f9e41ff2b9 h1:
 github.com/cyrinux/monitor2call/translate v0.0.0-20181024081943-44f9e41ff2b9/go.mod h1:v5uxf36SPcaskBRgQBsBPaXYNBSt5QuxBC0tfRY8xHc=
 github.com/cyrinux/monitor2call/translate v0.0.0-20181024085818-5c137c539eda h1:XjhF3TB84mO+6BKd2dfTgWmmPrl27TlpTn8BG/Q4jfA=
 github.com/cyrinux/monitor2call/translate v0.0.0-20181024085818-5c137c539eda/go.mod h1:0WU9AzLYtc/6U1P5q+XgJ9+cqPIlG/HAE65YrZSm96I=
+github.com/cyrinux/monitor2call/translate v0.0.0-20181024090540-9e0da6c769c4 h1:BmkFNfsd/+NCBRlRAeo80dz+tkUolmxzig+fl8IcmuQ=
+github.com/cyrinux/monitor2call/translate v0.0.0-20181024090540-9e0da6c769c4/go.mod h1:S/8OdcelB8qgOzNYt3DxZphkYa8XBRk8FRsNxHtvPD8=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/flimzy/diff v0.1.3 h1:WVwo0/bEabKZY501IfpSdEln/rkIXJ3MXsjPr6U3G/U=
