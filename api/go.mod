@@ -1,11 +1,11 @@
 module github.com/cyrinux/monitor2call/api
 
 require (
-	github.com/cyrinux/monitor2call/database v0.0.0-20181024090540-9e0da6c769c4
-	github.com/cyrinux/monitor2call/helpers v0.0.0-20181024081943-44f9e41ff2b9
-	github.com/cyrinux/monitor2call/models v0.0.0-20181024090540-9e0da6c769c4
-	github.com/cyrinux/monitor2call/notifications v0.0.0-20181024090540-9e0da6c769c4
-	github.com/cyrinux/monitor2call/translate v0.0.0-20181024090540-9e0da6c769c4
+	github.com/cyrinux/monitor2call/database v0.0.0-20181024093837-9869b9a180b9
+	github.com/cyrinux/monitor2call/helpers v0.0.0-20181024093837-9869b9a180b9
+	github.com/cyrinux/monitor2call/models v0.0.0-20181024093837-9869b9a180b9
+	github.com/cyrinux/monitor2call/notifications v0.0.0-20181024093837-9869b9a180b9
+	github.com/cyrinux/monitor2call/translate v0.0.0-20181024093837-9869b9a180b9
 	github.com/gin-contrib/sse v0.0.0-20170109093832-22d885f9ecc7 // indirect
 	github.com/gin-gonic/gin v1.3.0
 	github.com/go-openapi/jsonpointer v0.17.1 // indirect

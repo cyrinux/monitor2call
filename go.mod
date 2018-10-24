@@ -1,7 +1,6 @@
 module github.com/cyrinux/monitor2call
 
 require (
-	github.com/cyrinux/monitor2call/helpers v0.0.0-20181024081943-44f9e41ff2b // indirect
 	github.com/go-openapi/jsonpointer v0.17.1 // indirect
 	github.com/go-openapi/jsonreference v0.17.1 // indirect
 	github.com/go-openapi/spec v0.17.1 // indirect

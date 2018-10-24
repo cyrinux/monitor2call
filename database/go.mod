@@ -1,7 +1,7 @@
 module github.com/cyrinux/monitor2call/database
 
 require (
-	github.com/cyrinux/monitor2call/helpers v0.0.0-20181024081943-44f9e41ff2b9
+	github.com/cyrinux/monitor2call/helpers v0.0.0-20181024093837-9869b9a180b9
 	github.com/flimzy/diff v0.1.3 // indirect
 	github.com/flimzy/kivik v1.8.1
 	github.com/flimzy/testy v0.0.13 // indirect

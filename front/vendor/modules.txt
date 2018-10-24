@@ -9,17 +9,17 @@ github.com/PuerkitoBio/urlesc
 # github.com/aerokite/go-google-translate v0.0.2-alpha
 github.com/aerokite/go-google-translate/pkg
 github.com/aerokite/go-google-translate/pkg/client
-# github.com/cyrinux/monitor2call/api v0.0.0-20181024090540-9e0da6c769c4
+# github.com/cyrinux/monitor2call/api v0.0.0-20181024093837-9869b9a180b9
 github.com/cyrinux/monitor2call/api
-# github.com/cyrinux/monitor2call/database v0.0.0-20181024090540-9e0da6c769c4
+# github.com/cyrinux/monitor2call/database v0.0.0-20181024093837-9869b9a180b9
 github.com/cyrinux/monitor2call/database
-# github.com/cyrinux/monitor2call/helpers v0.0.0-20181024081943-44f9e41ff2b9
+# github.com/cyrinux/monitor2call/helpers v0.0.0-20181024093837-9869b9a180b9
 github.com/cyrinux/monitor2call/helpers
-# github.com/cyrinux/monitor2call/models v0.0.0-20181024090540-9e0da6c769c4
+# github.com/cyrinux/monitor2call/models v0.0.0-20181024093837-9869b9a180b9
 github.com/cyrinux/monitor2call/models
-# github.com/cyrinux/monitor2call/notifications v0.0.0-20181024090540-9e0da6c769c4
+# github.com/cyrinux/monitor2call/notifications v0.0.0-20181024093837-9869b9a180b9
 github.com/cyrinux/monitor2call/notifications
-# github.com/cyrinux/monitor2call/translate v0.0.0-20181024090540-9e0da6c769c4
+# github.com/cyrinux/monitor2call/translate v0.0.0-20181024093837-9869b9a180b9
 github.com/cyrinux/monitor2call/translate
 # github.com/flimzy/kivik v1.8.1
 github.com/flimzy/kivik
