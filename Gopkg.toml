@@ -1,0 +1,82 @@
+# Gopkg.toml example
+#
+# Refer to https://golang.github.io/dep/docs/Gopkg.toml.html
+# for detailed Gopkg.toml documentation.
+#
+# required = ["github.com/user/thing/cmd/thing"]
+# ignored = ["github.com/user/project/pkgX", "bitbucket.org/user/project/pkgA/pkgY"]
+#
+# [[constraint]]
+#   name = "github.com/user/project"
+#   version = "1.0.0"
+#
+# [[constraint]]
+#   name = "github.com/user/project2"
+#   branch = "dev"
+#   source = "github.com/myfork/project2"
+#
+# [[override]]
+#   name = "github.com/x/y"
+#   version = "2.4.0"
+#
+# [prune]
+#   non-go = false
+#   go-tests = true
+#   unused-packages = true
+
+
+[[constraint]]
+  name = "cloud.google.com/go"
+  version = "0.31.0"
+
+[[constraint]]
+  name = "github.com/aerokite/go-google-translate"
+  version = "0.0.2-alpha"
+
+[[constraint]]
+  name = "github.com/flimzy/kivik"
+  version = "1.8.1"
+
+[[constraint]]
+  name = "github.com/gin-gonic/gin"
+  version = "1.3.0"
+
+[[constraint]]
+  name = "github.com/go-kivik/couchdb"
+  version = "1.8.1"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/gregdel/pushover"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/kahlys/sms"
+
+[[constraint]]
+  name = "github.com/nyaruka/phonenumbers"
+  version = "1.0.30"
+
+[[constraint]]
+  name = "github.com/sirupsen/logrus"
+  version = "1.1.1"
+
+[[constraint]]
+  name = "github.com/swaggo/gin-swagger"
+  version = "1.0.0"
+
+[[constraint]]
+  name = "github.com/swaggo/swag"
+  version = "1.3.2"
+
+[[constraint]]
+  branch = "master"
+  name = "github.com/toorop/gin-logrus"
+
+[[constraint]]
+  branch = "master"
+  name = "google.golang.org/genproto"
+
+[prune]
+  go-tests = true
+  unused-packages = true

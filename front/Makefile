@@ -8,25 +8,23 @@ dev: build
 build: clean swag deps gobuild
 
 deps:
-	GO111MODULE=on go get -d -v
-	GO111MODULE=on go mod tidy
+	dep ensure
 
 swag:
-	GO111MODULE=on go get -v github.com/swaggo/swag/cmd/swag
-	cd ../ && GO111MODULE=on swag init && cp -rv docs front/docs && cd -
+	cd ../ && swag init && cp -rv docs front/docs && cd -
 
 gobuild: *.go **/*.go
 	install -d -m0700 ./cache
-	GO111MODULE=on go build -o front
+	go build -o front
 
-docker:
-	sudo docker build ./dockerfiles/front/Dockerfile
+docker-deps:
+	dep ensure --vendor-only
 
 release: *.go **/*.go
-	GO111MODULE=on CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -mod vendor -a -installsuffix cgo -ldflags="-w -s" -o front
+	CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -ldflags="-w -s" -o front
 
 test:
-	GO111MODULE=on go test ./...
+	go test ./...
 
 run:
 	echo "Start the api"

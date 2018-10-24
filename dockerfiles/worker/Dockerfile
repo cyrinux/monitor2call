@@ -2,12 +2,18 @@
 FROM golang:alpine as builder
 RUN apk update
 RUN apk add git && apk add ca-certificates && apk add make && apk add gcc && apk add musl-dev
+# Download and install the latest release of dep
+ADD https://github.com/golang/dep/releases/download/v0.5.0/dep-linux-amd64 /usr/bin/dep
+RUN chmod +x /usr/bin/dep
+WORKDIR $GOPATH/src/github.com/cyrinux/monitor2call/
+COPY Gopkg.toml Gopkg.lock ./
+RUN dep ensure --vendor-only
+COPY . ./
+WORKDIR $GOPATH/src/github.com/cyrinux/monitor2call/worker
+# Build the worker binary
+RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -ldflags="-w -s" -o worker
 # Create user monitor2call
 RUN adduser -D -g '' monitor2call
-COPY . $GOPATH/src/monitor2call/
-WORKDIR $GOPATH/src/monitor2call/worker/
-# Build the worker binary
-RUN make release
 # Move worker file
 RUN mv worker /go/bin/monitor2call_worker
 
