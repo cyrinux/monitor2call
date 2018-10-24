@@ -23,7 +23,7 @@ docker:
 	sudo docker build ./dockerfiles/front/Dockerfile
 
 release: *.go **/*.go
-	GO111MODULE=on CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -ldflags="-w -s" -o front
+	GO111MODULE=on CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -mod vendor -a -installsuffix cgo -ldflags="-w -s" -o front
 
 test:
 	GO111MODULE=on go test ./...

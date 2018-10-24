@@ -1,0 +1,11 @@
+github.com/golang/protobuf v1.2.0 h1:P3YflyNX/ehuJFLhxviNdFxQPkGK5cDcApsge1SqnvM=
+github.com/golang/protobuf v1.2.0/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5yJMmIC1U=
+github.com/gregdel/pushover v0.0.0-20180208231006-1e03358b8e7e h1:InUqbygFzzdNpgu2R2lsL5rY1NfrPuZsaOTIQfSru30=
+github.com/gregdel/pushover v0.0.0-20180208231006-1e03358b8e7e/go.mod h1:NbuXd8Iwy5dU99qFToB8mSE29qJOQNW/bphiV8CWj/k=
+github.com/nyaruka/phonenumbers v1.0.30 h1:8lguP8G5icL9ilZtIumPAgHDRbH1ccBG2ijOPdTJK1k=
+github.com/nyaruka/phonenumbers v1.0.30/go.mod h1:GQ0cTHlrxPrhoLwyQ1blyN1hO794ygt6FTHWrFB5SSc=
+golang.org/x/net v0.0.0-20180921000356-2f5d2388922f/go.mod h1:mL1N/T3taQHkDXs73rZJwtUhF3w3ftmwwsq0BUmARs4=
+golang.org/x/net v0.0.0-20181023162649-9b4f9f5ad519 h1:x6rhz8Y9CjbgQkccRGmELH6K+LJj7tOoh3XWeC1yaQM=
+golang.org/x/net v0.0.0-20181023162649-9b4f9f5ad519/go.mod h1:mL1N/T3taQHkDXs73rZJwtUhF3w3ftmwwsq0BUmARs4=
+golang.org/x/sync v0.0.0-20180314180146-1d60e4601c6f h1:wMNYb4v58l5UBM7MYRLPG6ZhfOqbKu7X5eyFl8ZhKvA=
+golang.org/x/sync v0.0.0-20180314180146-1d60e4601c6f/go.mod h1:RxMgew5VJxzue5/jJTE5uejpjVlOe/izrB70Jof72aM=

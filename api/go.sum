@@ -10,8 +10,10 @@ github.com/aerokite/go-google-translate v0.0.2-alpha h1:afXUGZSsF3+TRsqLKv8gOylv
 github.com/aerokite/go-google-translate v0.0.2-alpha/go.mod h1:h0eb2VzZMJy/WjLtAZw4CNUBu73rGF0/rWPXb7HIN1c=
 github.com/beorn7/perks v0.0.0-20180321164747-3a771d992973/go.mod h1:Dwedo/Wpr24TaqPxmxbtue+5NUziq4I4S80YR8gNf3Q=
 github.com/client9/misspell v0.3.4/go.mod h1:qj6jICC3Q7zFZvVWo7KLAzC3yx5G7kyvSDkc90ppPyw=
+github.com/cyrinux/monitor2call v0.0.0-20181024092639-78638ad6fb63 h1:xo9f58RmDVk809yZBKscPNCw8V9TmsY7fFLNpfPSM7E=
 github.com/cyrinux/monitor2call/database v0.0.0-20181024090540-9e0da6c769c4 h1:zxmZlM9BRYkeEjAeeabdM8v0L5hwJByGVQFPUh2Mesk=
 github.com/cyrinux/monitor2call/database v0.0.0-20181024090540-9e0da6c769c4/go.mod h1:dCZriYvUYlrRbCW4Ow6zto/ZbZNaf80HzmJzk1uZPRw=
+github.com/cyrinux/monitor2call/front v0.0.0-20181024092639-78638ad6fb63 h1:8mwdrHNMOzhaM7nn2xYVGwtLSXSoaZlwCUKjlBpbXtg=
 github.com/cyrinux/monitor2call/helpers v0.0.0-20181024081943-44f9e41ff2b9 h1:OmR4YhLmVeJg/EEMVknkZV60AKha5Gr+VxvlHh2PmTo=
 github.com/cyrinux/monitor2call/helpers v0.0.0-20181024081943-44f9e41ff2b9/go.mod h1:j46ewHfwka4rUMi/9nV+Ro6BBxI4siPkzaoMoPW8J1g=
 github.com/cyrinux/monitor2call/models v0.0.0-20181024085818-5c137c539eda h1:fRmnio3gmfMJyj1ZgTL2dSe5nuRaZxaXE99A68+G1UM=

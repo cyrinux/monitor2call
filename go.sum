@@ -2,6 +2,10 @@ github.com/PuerkitoBio/purell v1.1.0 h1:rmGxhojJlM0tuKtfdvliR84CFHljx9ag64t2xmVk
 github.com/PuerkitoBio/purell v1.1.0/go.mod h1:c11w/QuzBsJSee3cPx9rAFu61PvFxuPbtSwDGJws/X0=
 github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578 h1:d+Bc7a5rLufV/sSk/8dngufqelfh6jnri85riMAaF/M=
 github.com/PuerkitoBio/urlesc v0.0.0-20170810143723-de5bf2ad4578/go.mod h1:uGdkoq3SwY9Y+13GIhn11/XLaGBb4BfwItxLd5jeuXE=
+github.com/cyrinux/monitor2call/helpers v0.0.0-20181024081943-44f9e41ff2b h1:mwzpSSJQC3jpaN/pv8SH3XkxuT81zRrUJmKlYwWnCF4=
+github.com/cyrinux/monitor2call/helpers v0.0.0-20181024081943-44f9e41ff2b/go.mod h1:j46ewHfwka4rUMi/9nV+Ro6BBxI4siPkzaoMoPW8J1g=
+github.com/cyrinux/monitor2call/helpers v0.0.0-20181024081943-44f9e41ff2b9 h1:OmR4YhLmVeJg/EEMVknkZV60AKha5Gr+VxvlHh2PmTo=
+github.com/cyrinux/monitor2call/helpers v0.0.0-20181024081943-44f9e41ff2b9/go.mod h1:j46ewHfwka4rUMi/9nV+Ro6BBxI4siPkzaoMoPW8J1g=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/go-openapi/jsonpointer v0.17.0 h1:nH6xp8XdXHx8dqveo0ZuJBluCO2qGrPbDNZ0dwoRHP0=
