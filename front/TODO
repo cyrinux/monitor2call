@@ -1,0 +1,5 @@
+# TODO
+
+* SMS if pushover not ack in 15min
+* HTTPS support
+* Use .env and docker-compose.yml instead on Makefile hack for generate docker-compose.yml

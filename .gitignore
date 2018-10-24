@@ -1,0 +1,11 @@
+docs
+front/google_api_keys.json
+google_api_keys.json
+front/front
+worker/worker
+sms_worker/sms_worker
+front/cache/*.mp3
+keys/*
+docker-compose.yml
+.env
+
