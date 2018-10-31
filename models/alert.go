@@ -91,8 +91,14 @@ func (alert *Alert) Prepare() *pushover.Message {
 	if len(alert.Tags) == 0 {
 		alert.Tags = append(alert.Tags, "all")
 	}
-	tags := []string{alert.Host, alert.Service, alert.State, alert.Monitor}
-	alert.Tags = append(alert.Tags, tags...)
+	// add service, host, state, monitor in tags if filled
+	autoTags := []string{alert.Host, alert.Service, alert.State, alert.Monitor}
+	for idx := 0; idx < len(autoTags); idx++ {
+		if autoTags[idx] != "" {
+			alert.Tags = append(alert.Tags, autoTags[idx])
+		}
+
+	}
 
 	// contruct pushover message
 	message := &pushover.Message{

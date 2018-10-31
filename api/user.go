@@ -2,15 +2,13 @@ package api
 
 import (
 	"context"
-	
 	"net/http"
-	log "github.com/sirupsen/logrus"
-	
-	"github.com/cyrinux/monitor2call/database"
-	"github.com/cyrinux/monitor2call/models"  //models
-	"github.com/cyrinux/monitor2call/notifications" //notifications
 
+	"github.com/cyrinux/monitor2call/database"
+	"github.com/cyrinux/monitor2call/models"        //models
+	"github.com/cyrinux/monitor2call/notifications" //notifications
 	"github.com/gin-gonic/gin"
+	log "github.com/sirupsen/logrus"
 )
 
 // PostUser godoc
@@ -193,7 +191,7 @@ func DeleteUser(c *gin.Context) {
 
 	var user models.User
 	c.BindJSON(&user)
-	
+
 	name := c.Params.ByName("id")
 	rev := user.Rev
 	newRev, err := db.Delete(context.TODO(), name, rev)
@@ -201,12 +199,11 @@ func DeleteUser(c *gin.Context) {
 		log.Errorf("User %s not found", name)
 		c.JSON(http.StatusNotFound, gin.H{"error": "User not found"})
 		return
-	} else {
-		c.JSON(http.StatusOK, gin.H{"success": "User deleted " + name + ", new revision is " + newRev})
 	}
-	return
+	c.JSON(http.StatusOK, gin.H{"success": "User deleted " + name + ", new revision is " + newRev})
 }
 
+// OptionsUser set allowed method
 func OptionsUser(c *gin.Context) {
 	c.Writer.Header().Set("Access-Control-Allow-Methods", "DELETE, POST, PUT")
 	c.Writer.Header().Set("Access-Control-Allow-Headers", "Content-Type")

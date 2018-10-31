@@ -16,6 +16,8 @@ RUN CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -installsuffix cgo -ldflag
 RUN adduser -D -g '' monitor2call
 # Move worker file
 RUN mv worker /go/bin/monitor2call_worker
+# Show version
+RUN /go/bin/monitor2call_worker --version
 
 # STEP 3 build the smallest worker image
 # start from scratch

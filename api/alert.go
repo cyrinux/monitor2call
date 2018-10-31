@@ -24,6 +24,7 @@ import (
 // @Param service query string true "service"
 // @Param monitor query string true "monitor"
 // @Param state query string true "state"
+// @Param message query string true "message"
 // @Param tags query array true "tag1,tag2"
 // @Produce json
 // @Success 201 {object} models.Alert
@@ -54,6 +55,8 @@ func PostAlert(c *gin.Context) {
 		c.JSON(http.StatusUnprocessableEntity, gin.H{"error": err})
 		return
 	}
+
+	log.Print(alert)
 
 	// prepare the message
 	msg := alert.Prepare()
@@ -269,6 +272,7 @@ func DeleteAlert(c *gin.Context) {
 	return
 }
 
+// OptionsAlert set allowed method
 func OptionsAlert(c *gin.Context) {
 	c.Writer.Header().Set("Access-Control-Allow-Methods", "DELETE, POST, PUT")
 	c.Writer.Header().Set("Access-Control-Allow-Headers", "Content-Type")
