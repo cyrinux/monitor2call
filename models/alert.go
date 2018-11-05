@@ -83,7 +83,11 @@ func (alert *Alert) Prepare() *pushover.Message {
 	}
 
 	// voice filename prefix
-	alert.Filename = alert.Monitor + "-" + alert.Host + "-" + alert.Service + "-" + alert.State
+	if alert.Host != "" && alert.Monitor != "" && alert.Service != "" && alert.State != "" {
+		alert.Filename = alert.Monitor + "-" + alert.Host + "-" + alert.Service + "-" + alert.State
+	} else {
+		alert.Filename = alert.Message
+	}
 
 	// Generate and add Tags
 	// add state as tag

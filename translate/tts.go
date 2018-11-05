@@ -2,6 +2,7 @@ package translate
 
 import (
 	"context"
+	b64 "encoding/base64"
 	"io/ioutil"
 	"log"
 	"os"
@@ -13,7 +14,11 @@ import (
 
 // DoTTS convert message to mp3 audio
 func DoTTS(tts *models.TTS) (filename string, err error) {
-	filename = tts.Filename + "-" + tts.LanguageCode + ".mp3"
+	// https://play.golang.org/p/QUi2hHd10z
+	// Ceci encode et décode selone le format base64
+	// compatible avec les URLs.
+	base64Filename := b64.URLEncoding.EncodeToString([]byte(tts.Filename))
+	filename = base64Filename + "-" + tts.LanguageCode + ".mp3"
 	cacheDir := os.Getenv("CACHE_DIR")
 	if cacheDir == "" {
 		cacheDir = "./cache"
