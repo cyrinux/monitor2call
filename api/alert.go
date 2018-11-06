@@ -56,8 +56,6 @@ func PostAlert(c *gin.Context) {
 		return
 	}
 
-	log.Print(alert)
-
 	// prepare the message
 	msg := alert.Prepare()
 

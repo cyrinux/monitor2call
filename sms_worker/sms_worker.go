@@ -155,6 +155,10 @@ func main() {
 	// for w := 1; w <= 5; w++ {
 	// 	go worker(w, alerts, results)
 	// }
+
+	// This start only 1 workers, to prevent SMS duplicate
+	// If later we need to manage thousand of SMS, we will
+	// add a lock per alert between shared workers
 	go worker(1, alerts, results)
 
 	// Main Loop
