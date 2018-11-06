@@ -152,9 +152,10 @@ func main() {
 
 	//  This starts up 5 workers, initially blocked
 	// because there are no alerts yet.
-	for w := 1; w <= 5; w++ {
-		go worker(w, alerts, results)
-	}
+	// for w := 1; w <= 5; w++ {
+	// 	go worker(w, alerts, results)
+	// }
+	go worker(1, alerts, results)
 
 	// Main Loop
 	for {
