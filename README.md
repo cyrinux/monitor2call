@@ -2,7 +2,7 @@
 
 A future API notifications proxy
 
-/!\ DO NOT USE THIS SHIT FOR THE MOMENT !
+/!\ WIP (but working)
 
 ## Feature
 
